@@ -10,6 +10,10 @@ public abstract class Usuario extends Persona {
         this.nombreUsuario = nombreUsuario;
         this.contrasena = contrasena;
         this.tipoUsuario = tipoUsuario;
+        this.cedula = cedula;
+        this.sexo = sexo;
+        this.edad = edad;
+
     }
 
     public String getNombreUsuario() {
@@ -34,5 +38,11 @@ public abstract class Usuario extends Persona {
 
     public void setTipoUsuario(TipoUsuario tipoUsuario) {
         this.tipoUsuario = tipoUsuario;
+    }
+    public Sexo getSexo() {
+        return sexo;
+    }
+    public void setSexo(Sexo sexo) {
+        this.sexo = sexo;
     }
 }
